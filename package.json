@@ -16,7 +16,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IgnatevD/js-project_online-shop/issues"
+    "url": "https://github.com/IgnatevD/js-project-online-shop/issues"
   },
   "devDependencies": {
     "@pnotify/core": "^5.2.0",

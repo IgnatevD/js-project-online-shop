@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://nikitashpanko.github.io/online-shop-js-project",
+  "homepage": "https://IgnatevD.github.io/js-project_online-shop",
   "scripts": {
     "dev": "parcel --no-source-maps src/*.html",
-    "build": "parcel build --no-source-maps src/*.html --public-url /online-shop-js-project/"
+    "build": "parcel build --no-source-maps src/*.html --public-url /js-project_online-shop/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikitashpanko/online-shop-js-project.git"
+    "url": "git+https://github.com/IgnatevD/js-project_online-shop.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nikitashpanko/online-shop-js-project/issues"
+    "url": "https://github.com/IgnatevD/js-project_online-shop/issues"
   },
   "devDependencies": {
     "@pnotify/core": "^5.2.0",

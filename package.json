@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://IgnatevD.github.io/js-project_online-shop",
+  "homepage": "https://IgnatevD.github.io/js-project-online-shop/",
   "scripts": {
     "dev": "parcel --no-source-maps src/*.html",
     "build": "parcel build --no-source-maps src/*.html --public-url /js-project-online-shop/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgnatevD/js-project_online-shop.git"
+    "url": "git+https://github.com/IgnatevD/js-project-online-shop/.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",

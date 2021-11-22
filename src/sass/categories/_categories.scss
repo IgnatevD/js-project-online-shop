@@ -1,0 +1,228 @@
+.categories {
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.categories__container {
+  height: 374px;
+
+  @media screen and (min-width: 768px) {
+    height: 354px;
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1266px;
+  }
+}
+
+.container__card--list {
+  position: relative;
+  height: 328px;
+  width: auto;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 310px;
+  }
+}
+
+.categories__name {
+  display: flex;
+  margin-bottom: 24px;
+
+  & .categories__titel {
+    display: inline-block;
+    align-self: baseline;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 10px;
+  }
+  & .categories__titel--allCard {
+    font-size: 12px;
+    align-self: baseline;
+    text-decoration-line: underline;
+    & .categories__titel--link {
+      color: var(--color-highlight);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 16px;
+  }
+}
+
+.categories__card--list {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media screen and (min-width: 768px) {
+    height: 306px;
+  }
+}
+
+.button__arow--left,
+.button__arow-right {
+  display: none;
+  cursor: pointer;
+
+  & .icon {
+    display: block;
+    fill: var(--color-main-text);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--arrow-color);
+    border: 0px;
+    top: 123px;
+    width: 32px;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    & .icon {
+      fill: var(--color-main-text);
+    }
+
+    &:active {
+      background-color: var(--color-highlight);
+      .icon {
+        fill: var(--color-main-background);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 113px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--color-highlight);
+
+      .icon {
+        fill: var(--color-main-background);
+      }
+    }
+  }
+}
+.button__arow--left {
+  left: 0px;
+}
+
+.button__arow-right {
+  right: 0px;
+}
+
+.button__noCard {
+  fill: #a2a2a2;
+}
+.categories__container {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 752px;
+    .swiper-container {
+      width: 688px;
+    }
+    .button__arow--left,
+    .button__arow-right {
+      top: 177px !important;
+    }
+    .button__arow-right {
+      right: 14px !important;
+    }
+
+    .button__arow--left {
+      left: 14px !important;
+    }
+    .swiper-slide {
+      width: 333px !important;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1236px;
+    .swiper-container {
+      width: 1204px;
+    }
+
+    .swiper-slide {
+      width: 286px !important;
+    }
+
+    .swiper-wrapper {
+      padding: 0;
+    }
+    .button__arow--left,
+    .button__arow-right {
+      top: 159px !important;
+    }
+    .button__arow-right {
+      right: 0 !important;
+    }
+
+    .button__arow--left {
+      left: 0 !important;
+    }
+  }
+}
+
+.icon-arow--left {
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/svg/arrow-l.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-arow--leftW {
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/svg/arrow-l-w.svg);
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.icon-arow--right {
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/svg/arrow-r.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-arow--rightW {
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/svg/arrow-r-w.svg);
+  background-repeat: no-repeat;
+  display: none;
+}
+.button__arow--left {
+  &:hover {
+    color: var(--color-main-background);
+    background-color: var(--color-highlight);
+
+    & .icon-arow--left {
+      display: none;
+    }
+    & .icon-arow--leftW {
+      display: block;
+    }
+  }
+}
+
+.button__arow-right {
+  &:hover {
+    color: var(--color-main-background);
+    background-color: var(--color-highlight);
+
+    & .icon-arow--right {
+      display: none;
+    }
+    & .icon-arow--rightW {
+      display: block;
+    }
+  }
+}

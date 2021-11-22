@@ -1,0 +1,25 @@
+<section class='hero'>
+  <div class='hero__container'>
+     <ul class="hero__order-list">
+     {{#each this}}
+      <li class="hero__order-item" data-index={{@index}}></li>
+       {{/each}}
+       </ul>
+    <h1 class='visually-hidden'>самые лучшие товары только у нас</h1>
+    <ul class='advertising-list list'>
+      {{#each this}}
+        <li class='advertising-list__item' data-index={{index}}>
+          <div class='advertising-list__shell'>
+            <div class='advertising-list__img-wrapper'>
+              <img src='{{imageUrl}}' alt='{{title}}' />
+            </div>
+            <div class='advertising-list__content-wrapper'>
+              <h3 class='advertising-list__title'>{{title}}</h3>
+              <p class='advertising-list__price'>{{price}}</p>
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

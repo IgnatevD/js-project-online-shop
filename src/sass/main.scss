@@ -1,0 +1,37 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+// @import './example';
+// UTILS
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// BASE
+@import './base/common';
+@import './base/container';
+
+// COMPONENTS
+@import './components/root';
+@import './components/buttons';
+@import './components/backdrop';
+@import './components/modal-close-button';
+@import './components/authorization-form';
+@import './components/modal-advert';
+@import './components/modal-advert-edit';
+@import './components/confirm-modal';
+@import './components/modal-students';
+@import './components/theme-switch.scss';
+
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/loadmore';
+@import './layout/footer';
+
+@import './categories/categories';
+@import './categories/card';
+@import './categories/modal-card';
+@import './categories/category-cards';

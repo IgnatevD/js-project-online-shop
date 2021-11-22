@@ -1,0 +1,221 @@
+.card__all--content {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+  .icon-heart-white,
+  .icon-fullscreen {
+    fill: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba(0, 0, 0, 0.12);
+      .icon-heart-white {
+        & .icon-heart {
+          background-image: url('/images/svg/heard-w.svg');
+        }
+      }
+      .icon-fullscreen--conteiner {
+        background-image: url('/images/svg/fullsscreen.svg');
+      }
+    }
+  }
+}
+
+.card__article {
+  display: block;
+  margin-bottom: 22px;
+
+  box-shadow: 0px 2px 4px var(--box-shedow-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 290px;
+  height: 300px;
+
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    height: 306px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 286px;
+    height: 306px;
+  }
+}
+
+.card__conteiner {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  cursor: pointer;
+
+  & .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+}
+
+.card__name--price {
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 66px;
+  }
+}
+
+.card__title {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__old-price {
+  display: block;
+  position: relative;
+  width: 71px;
+
+  margin-right: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-ghost);
+}
+
+.card__new-price {
+  display: block;
+  font-weight: bold;
+  color: var(--color-highlight);
+}
+
+.card__poiter--list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 56px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.card__poiter {
+  display: block;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  list-style: none;
+  background: #cdcdcd;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+  &.active__color {
+    background: var(--color-highlight);
+  }
+}
+
+.icon-line {
+  position: absolute;
+  width: 71px;
+  height: 1px;
+  left: 0px;
+  top: 50%;
+  background-color: var(--color-main-text);
+}
+
+.icon-heart-white,
+.icon-fullscreen {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background-color: inherit;
+  z-index: 1;
+  right: 15px;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.icon-heart-white {
+  top: 15px;
+}
+
+.icon-heart-white {
+  & .icon-heart,
+  & .icon-heart--favorites {
+    width: 18px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.icon-heart-white {
+  & .icon-heart--favorites {
+    background-image: url('/images/svg/heard-red.svg');
+    display: none;
+  }
+}
+
+.icon-heart-white.isFavorites {
+  & .icon-heart--favorites {
+    display: block;
+  }
+
+  & .icon-heart {
+    display: none;
+  }
+}
+
+.icon-fullscreen {
+  bottom: 19px;
+}
+.icon-fullscreen--conteiner {
+  width: 16px;
+  height: 16px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-pagination {
+  bottom: -2px !important;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-highlight) !important;
+}

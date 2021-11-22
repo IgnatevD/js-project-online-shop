@@ -1,0 +1,48 @@
+<div class='backdrop'>
+  <div class='modal modal-authorization'>
+    <form class='authorization-form'>
+      <p class='authorization-form__text'>Для авторизации можете использовать Google Account:</p>
+      <a class='authorization-form__google-button'
+          href="https://callboard-backend.goit.global/auth/google"
+          aria-label='google button'>
+      </a>
+      <p class='authorization-form__text'>Или войдите в приложение используя e-mail и пароль:</p>
+      <label class='authorization-form__label'>
+        <input
+          class='authorization-form__input'
+          type='email'
+          name='email'
+          required
+          placeholder='E-mail'
+          pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+        />
+        <span></span>
+      </label>
+      <label class='authorization-form__label'>
+        <input
+          class='authorization-form__input'
+          type='password'
+          name='password'
+          required
+          placeholder='Password'
+          minlength="6"
+          maxlength="16"
+        />
+        <span></span>
+      </label>
+      <div class='authorization-form__button-wrapper'>
+        <button class='primary-button button--authorization-form button-auth' type='button'>Войти</button>
+        <button
+          class='secondary-button button--authorization-form button-registration'
+          type='button'
+        >
+          Регистрация
+        </button>
+      </div>
+    </form>
+    <button class='modal-close-button' type='button' aria-label='Close modal'>
+      <div class='modal-close-button__icon'></div>
+      <div class='modal-close-button__icon-white'></div>
+    </button>
+  </div>
+</div>

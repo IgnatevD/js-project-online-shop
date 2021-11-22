@@ -1,0 +1,66 @@
+body {
+  // @include light-theme;
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  background-color: var(--color-main-background);
+  color: var(--color-main-text);
+  height: 100%;
+}
+
+.light-theme {
+  @include light-theme;
+}
+
+.dark-theme {
+  @include dark-theme;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+main {
+  min-height: calc(100vh - 189px);
+
+  @media screen and (min-width: 768px) {
+    min-height: calc(100vh - 257px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-height: calc(100vh - 258px);
+  }
+}

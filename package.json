@@ -6,7 +6,7 @@
   "homepage": "https://IgnatevD.github.io/js-project_online-shop",
   "scripts": {
     "dev": "parcel --no-source-maps src/*.html",
-    "build": "parcel build --no-source-maps src/*.html --public-url /js-project_online-shop/"
+    "build": "parcel build --no-source-maps src/*.html --public-url /js-project-online-shop/"
   },
   "repository": {
     "type": "git",
